@@ -13,7 +13,7 @@ description: Write an awesome description for your new site here. You can edit t
   line in _config.yml. It will appear in your document head meta (for Google search
   results) and in your feed.xml site description.
 baseurl: "/testing"
-zeplinurl: "https://zeplin-gsf7clsmm4ar.runkit.sh/5a57d3985dd6d3ef719b48df/"
+zeplinurl: https://zeplin-gsf7clsmm4ar.runkit.sh/5a57d3985dd6d3ef719b48df/
 url: https://tomger.github.io
 twitter_username: jekyllrb
 github_username: jekyll
