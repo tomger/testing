@@ -107,8 +107,8 @@ h3 {
 .guide-navigation {
   // background: $color-background;
   background: hsl(0, 0%, 97%);
-  /*border-right: 1px solid $color-ui-20;*/
-  box-shadow: rgba(0,0,0,0.2) 0px 0 3px;
+  border-right: 1px solid hsl(0, 0%, 90%);
+  // box-shadow: rgba(0,0,0,0.2) 0px 0 3px;
   min-height: 100vh;
   flex: 0 0 184px;
   order: -1;
