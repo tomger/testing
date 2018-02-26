@@ -1,9 +1,14 @@
 ---
-position: 0
-layout: home
 ---
 
-Some more content, I really wish GH pages made it easier to add images.
-<a href="zpl://screen?sid=5a91ef0c3388d9a18029331c&pid=5a57d3985dd6d3ef719b48df">
-  <img srcset="{{site.zeplinurl}}/Library 2x" />
-</a>
+# Illustrations
+## Error state
+What happens if I What happens if I What happens if I What happens if I What happens if I What happens if I What happens if I What happens if I What happens if I What happens if I What happens if I What happens if I What happens if I What happens if I What happens if I What happens if I 
+### More stuff?
+<div class='guide-col-half'  markdown='1'>
+ewewe
+</div>
+<div class='guide-col-half'  markdown='1'>
+OKOK
+</div>
+xx

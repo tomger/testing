@@ -1,0 +1,359 @@
+---
+---
+
+@import 'tokens.scss';
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-family-body;
+  font-size: $font-size-regular;
+  line-height: $line-height-regular;
+  color: $color-text;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $color-brand01-dark;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+p {
+  margin: 0 0 8px 0;
+}
+
+h1 {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-header;
+  line-height: $line-height-header;
+  // margin-bottom: $spacing-large;
+  margin-top: 16px;
+}
+
+h2 {
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-huge;
+  line-height: $line-height-huge;
+  // margin: $spacing-large 0 $spacing-small 0;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-large;
+  line-height: $line-height-large;
+  // margin: $spacing-large 0 $spacing-small 0;
+  letter-spacing: -0.01em;
+}
+
+
+
+
+.guide-section {
+  margin-bottom: $spacing-large;
+}
+
+.guide-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.guide-content {
+  flex: 1;
+  padding: 32px 32px 32px 56px;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(8, [col-start] 1fr);
+  grid-auto-rows: min-content;
+  grid-column-gap: 24px;
+}
+
+.guide-content > * {
+  grid-column: col-start 1 / -1;
+}
+
+@media (max-width: 800px) {
+  .guide-content {
+    grid-template-columns: repeat(4, [col-start] 1fr);
+  }
+  // .guide-content > * {
+  //   grid-column: span 4;
+  // }
+}
+
+.guide-content > .guide-col-half {
+  grid-column: span 4;
+}
+
+.guide-warning {
+  color: $color-warning-dark;
+  background: $color-warning-light;
+  padding: $spacing-small $spacing-regular;
+  border-radius: $radius-regular;
+  display: inline-block;
+  margin-bottom: $spacing-large;
+}
+
+.guide-navigation {
+  // background: $color-background;
+  background: hsl(0, 0%, 97%);
+  /*border-right: 1px solid $color-ui-20;*/
+  box-shadow: rgba(0,0,0,0.2) 0px 0 3px;
+  min-height: 100vh;
+  flex: 0 0 184px;
+  order: -1;
+}
+
+.guide-navigation li {
+  margin: 0 0 8px 0;
+}
+
+.guide-navigation a {
+  text-decoration: none;
+  color: $color-text;
+  font-size: $font-size-small;
+  padding: 5px 16px;
+  display: block;
+  font-weight: $font-weight-semibold;
+}
+
+.guide-navigation a.active {
+  color: $color-brand01-dark
+}
+
+.guide-navigation-category {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-tiny;
+  color: $color-text-light;
+  padding: 24px 16px 4px 16px;
+}
+
+.guide-navigation a.guide-navigation-title {
+  margin-top: 16px;
+  color: $color-brand02
+}
+
+.guide-navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Content */
+
+.guide-swatches {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.guide-swatches-group {
+    margin: 4px;
+}
+
+.guide-swatches-group-title {
+  font-size: 14px;
+}
+
+.guide-swatch {
+  width: 200px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  transition: transform 200ms ease;
+  cursor: copy;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  color: rgba(0, 0, 0, 0.83);
+}
+.guide-swatch.isDark {
+  color: #fff;
+}
+
+.guide-swatch * {
+  pointer-events: none;
+  user-select: none;
+}
+
+.guide-swatch textarea {
+  position: absolute;
+  margin-left: -200%;
+}
+
+.guide-swatch:active {
+  transform: scale(1.05);
+}
+
+.token-table {
+  border-spacing: 0;
+  width: 100%;
+  font-size: $font-size-regular;
+}
+
+.token-table th {
+  text-align: left;
+  padding: 16px 8px 15px 0;
+  border-bottom: 1px solid $color-divider;
+}
+
+.token-table td {
+  vertical-align: top;
+  border-bottom: 1px solid $color-divider;
+  padding: 16px 8px 15px 0;
+  padding-right: $spacing-large;
+}
+.token-table td:last-child {
+  padding-right: 0;
+  min-width: 120px;
+}
+
+.token-table td.token-table-comment {
+
+  color: $color-text-light;
+}
+
+.typography-table td.typography-label {
+  color: $color-text-light;
+  font-size: $font-size-desktop-small;
+  font-weight: $font-weight-semibold;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.typography-table td:nth-child(2) {
+  padding-left: $spacing-large;
+}
+
+.typography-toggle {
+  display: inline-block;
+}
+
+.typography-toggle-item {
+  text-align: center;
+  padding: 10px 16px 8px 16px;
+  margin-bottom: -1px;
+  display: inline-block;
+  cursor: pointer;
+  color: $color-text-light;
+  border-bottom: 1px solid transparent;
+}
+
+.typography-toggle-item.isSelected {
+  border-color: $color-ui90;
+  color: $color-text;
+}
+
+.guide-contrast-analyser {
+  border-spacing: 1px;
+}
+
+.guide-contrast-analyser td {
+  width: 40px;
+  height: 40px;
+  vertical-align: center;
+  text-align: center;
+}
+
+
+.devicePreviewWrapper {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 184px;
+  background: #302f38;
+  flex: 1;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.devicePreview {
+  background: $color-background;
+  box-shadow: rgba(0,0,0,.4) 0 0 10px;
+  border-radius: 3px;
+  width: 375px;
+  height: 96vh;
+  max-height: 667px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.devicePreviewContent {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+
+
+@media only screen and (min-width: 480px) {
+  .token-table {
+    font-size: $font-size-desktop-regular;
+  }
+
+  body {
+    font-size: $font-size-desktop-regular;
+    line-height: $line-height-desktop-regular;
+  }
+  //
+  // h2, .guide-header {
+  //   font-size: $font-size-desktop-header;
+  //   line-height: $line-height-desktop-header;
+  // }
+  //
+  // h3, .guide-section-header {
+  //   font-size: $font-size-desktop-large;
+  //   line-height: $line-height-desktop-large;
+  // }
+
+  .guide-navigation a {
+    font-size: $font-size-desktop-small;
+  }
+
+  .guide-navigation-category {
+    font-size: $font-size-desktop-tiny;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .guide-navigation {
+    flex: 0;
+    order: 2;
+  }
+  .guide-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .guide-content {
+    flex: 1;
+    padding: 32px 32px 32px 24px;
+  }
+  .devicePreview {
+    border-radius: 0;
+    background: #fff;
+    position: fixed;
+    height: 100vh;
+    width: auto;
+    border: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
