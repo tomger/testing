@@ -1,14 +1,22 @@
 ---
 title: Your awesome title
-# gems:
-# - jekyll-titles-from-headings
-include: ['_pages']
-plugins:
-- jekyll-feed
+timezone: UTC
 collections:
   posts:
     title: Posts
     output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: default
+include:
+- _pages
+plugins:
+- jekyll-feed
 description: Write an awesome...
 baseurl: "/testing"
 zeplinurl: https://zeplin-gsf7clsmm4ar.runkit.sh/5a57d3985dd6d3ef719b48df/
@@ -16,9 +24,3 @@ url: https://tomger.github.io
 markdown: kramdown
 sass:
   style: compact
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
