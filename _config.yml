@@ -16,7 +16,8 @@ defaults:
 include:
 - _pages
 plugins:
-- jekyll-feed
+  - jekyll-feed
+  - jekyll-github-metadata
 description: Write an awesome...
 baseurl: "/testing"
 zeplinurl: https://zeplin-gsf7clsmm4ar.runkit.sh/5a57d3985dd6d3ef719b48df/
