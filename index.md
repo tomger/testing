@@ -11,3 +11,4 @@ Of zulke dingen, en het heeft dan ook lang geduurd, voor ik er toe overging een 
 <div class='guide-col-half'  markdown='1'>
 Dat ge [lezen moet]({{ site.baseurl }}{% link examples/studio-page.md %}) als ge makelaar in koffie zijt, of als ge wat anders zijt.
 </div>
+<img srcset="https://cdn.zeplin.io/5a57d3985dd6d3ef719b48df/screens/FE5118E4-38AF-4E31-82C0-F36983A54E02.png 2x">
