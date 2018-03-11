@@ -11,33 +11,13 @@
     <div class="guide-body">
       <main class="guide-content">
         {{ content }}
-        <!-- <Route path="/:name?" render={ p => {
-          let fileName = p.match.params.name;
-          // no path, load index.md from public
-          if (fileName == null) {
-            fileName = 'index.md';
-          }
-          // if the url ends in .md read {fileName}.md from public folder
-          if (/\.md$/.test(fileName)) {
-            let basename = process.env.NODE_ENV === 'production' ?
-            '/design-system' : ''
-            return <MarkdownLoader url={`${basename}/${fileName}`}/>;
-          }
-          // try loading a module named {fileName}
-          try {
-            let Page = pagesContext(`./${fileName}.js`).default;
-            return <Page/>
-          } catch (e) {
-            return <div class="guide-header">404 😤</div>
-          }
-        }}/> -->
         <a href="{{ site.github.repository_url }}/blob/master/{{page.path}}">Edit this page</a>
       </main>
       <nav class="guide-navigation">
         <ul>
           <li><a href="{{ site.baseurl }}/" class="guide-navigation-title">Foundation</a></li>
           <li class="guide-navigation-category">Library</li>
-          <li><a href="/color">Color</a></li>
+          <li><a href="{{ site.baseurl }}{% link color.md %}">Color</a></li>
           <li><a href="/typography">Typography</a></li>
           <li><a href="/layout">Layout</a></li>
           <li><a href="{{ site.baseurl }}{% link icons.md %}">Icons</a></li>

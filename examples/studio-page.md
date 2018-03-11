@@ -12,7 +12,11 @@ Niet alleen dat ik nooit iets schreef wat naar een roman geleek, maar ik houd er
 ***
 
 {: .guide-col-half}
+<div markdown="1">
 ## Studio details
+
+Het werk aan te vangen, dat gij, lieve lezer, zoëven in de hand hebt genomen, en dat ge lezen moet als ge makelaar
+</div>
 
 {: .guide-col-half}
 <img srcset="{{site.zeplinurl}}/example 2x" />
