@@ -3,12 +3,15 @@ permalink: color/
 ---
 
 # Color
-<ul>
-{% for token in site.data.tokens.properties %}
+<ul class="color-container">
+{% assign tokens = site.data.tokens.properties | sort:"name" %}
+{% for token in tokens %}
 {% if token.type == "color" %}
-<li>
-  {{ token.name }}
-  <div style="width: 40px; height: 40px; box-shadow: inset 0 0 1px 0 rgba(0,0,0,.4) ;background: {{token.value}}"></div>
+<li class="color-swatch">
+  <div class="color-swatch-preview" style="background: {{token.value}}">
+    {{ token.value }}
+  </div>
+  {{ token.name | replace: 'color', '' }}
 </li>
 {% endif %}
 {% endfor %}
