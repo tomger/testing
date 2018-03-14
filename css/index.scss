@@ -57,7 +57,29 @@ h3 {
 }
 
 
+.themecard {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  box-shadow: 0 0 1px #aaa, 0 4px 6px #eee;
+  height: 240px;
+  width: 600px;
+  overflow: hidden;
+  border-radius: 3px;
+}
 
+.themecard > div {
+  padding:24px;
+}
+
+.themecard-light {
+  background: $color-background-light;
+}
+
+.themecard-dark {
+  background: $color-background-dark;
+  color: $color-ui00;
+}
 
 .guide-section {
   margin-bottom: $spacing-large;
