@@ -5,7 +5,7 @@ permalink: color/
 # Color
 
 
-## Base
+## Example
 <div class="themecard">
   <div style="grid-row: 1 / span 2">
   <div>Text</div>
@@ -21,20 +21,12 @@ permalink: color/
   </div>
 </div>
 
-## Extended
+## Colors
 
-<ul class="color-container">
-{% assign tokens = site.data.tokens.properties | sort:"name" %}
-{% for token in tokens %}
-{% if token.type == "color" %}
-<li class="color-swatch">
-  <div class="color-swatch-preview" style="background: {{token.value}}">
-    {{ token.value }}
-  </div>
-  {{ token.name | replace: 'color', '' }}
-</li>
-{% endif %}
+{% assign colors = "Gray,Brand,Yellow,Green,Red,Orange" | split: "," %}
+{% for color in colors %}
+### {{color}}
+{% include color.html color=color %}
 {% endfor %}
-</ul>
 
 ## Illustration
