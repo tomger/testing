@@ -1,92 +1,103 @@
 
-// For Display and Heading
-$font-family-heading: Proxima Nova;
-$font-family-body: Proxima Nova;
-// Commonly used for subheaders.
+$font-family-display: Circuit;
+$font-family-display-outline: Circuit Outline;
+$font-family-text: TT Norms;
+$font-size-medium: 18px;
+$font-size-header-small: 28px;
 $font-size-large: 20px;
-// The most common and legible font size. Great for large amounts of text, button, links and even subheaders when combined with a bolder weight.
-$font-size-regular: 17px;
-$font-size-desktop-tiny: 12px;
-$font-size-desktop-large: 19px;
-// Use sparingly. Good for captions, combine with fontWeightBold for legibility.
+$font-size-regular: 16px;
 $font-size-tiny: 12px;
-$font-size-desktop-regular: 16px;
-// Use sparingly. Display should only be used for yelling at our users.
-$font-size-display: 48px;
-$font-size-desktop-display: 48px;
-$font-size-desktop-huge: 24px;
-// Commonly used for secondary text. Great for captions, dense areas and in combination with colorTextLight.
-$font-size-small: 15px;
-$font-size-desktop-header: 32px;
-$font-size-desktop-small: 14px;
-// Use sparingly. Interfaces with multiple header levels could use this in combination with a bold weight.
+$font-size-mobile-display-tiny: 22px;
+$font-size-mobile-display: 36px;
+$font-size-desktop-display-small: 42px;
+$font-size-desktop-display: 68px;
+$font-size-desktop-display-tiny: 28px;
+$font-size-mobile-display-small: 28px;
+$font-size-small: 14px;
+$font-size-desktop-display-jumbo: 100px;
 $font-size-huge: 24px;
-// Commonly used. Most of the time there should only be one header on a page. On iOS the header can scale to 80% to fit the text on one line. Use only with fontWeightHeader.
 $font-size-header: 32px;
+$font-size-header-large: 36px;
+$font-size-mobile-display-jumbo: 54px;
 // Default weight for all text.
 $font-weight-regular: 400;
-// Recommended weight for emphasizing inline text, links, subheaders, etc.
-$font-weight-semibold: 600;
-// Recommended weight for fontSizeHeader.
+$font-weight-medium: 500;
+// Recommended weight for Header, Display and Display Outline.
 $font-weight-bold: 700;
 $line-height-large: 28px;
-$line-height-desktop-tiny: 16px;
-$line-height-desktop-display: 48px;
-$line-height-regular: 24px;
-$line-height-desktop-small: 20px;
+$line-height-desktop-display: 72px;
+$line-height-regular: 20px;
+$line-height-desktop-display-tiny: 32px;
+$line-height-mobile-display-small: 32px;
+$line-height-mobile-display: 40px;
+$line-height-mobile-display-tiny: 30px;
+$line-height-desktop-display-small: 44px;
 $line-height-huge: 32px;
-$line-height-display: 48px;
 $line-height-header: 36px;
-$line-height-small: 20px;
-$line-height-desktop-huge: 32px;
-$line-height-desktop-header: 36px;
-$line-height-desktop-large: 28px;
-$line-height-desktop-regular: 24px;
+$line-height-mobile-display-jumbo: 58px;
+$line-height-small: 19px;
+$line-height-desktop-display-jumbo: 108px;
+$line-height-medium: 24px;
+$line-height-header-large: 40px;
 $line-height-tiny: 16px;
-$color-success: #40af53;
-$color-divider-on-light: #d6d9e2;
-$color-error: #ec1a38;
-// Regular text on a dark background.
+$line-height-header-small: 32px;
+$color-green: #00af7c;
+$color-gray60: #999999;
+$color-success: #00af7c;
+$color-gray50: #bdbdbd;
+$color-divider-on-light: #e3e3e3;
+$color-gray40: #d6d6d6;
+// Default hairline
+$color-gray30: #e7e7e7;
+$color-gray20: #efefef;
+$color-brand: #0055ff;
+$color-red-dark: #8c2a39;
+$color-orange-light: #fed6cb;
+$color-error: #c91630;
+// Default page background
+$color-gray10: #f7f7f7;
 $color-text-on-dark: #ffffff;
-// Alternative slightly darker background for UI sections.
-$color-background-light: #f4f7f9;
-// Primary button background, Link color
-$color-brand01: #23cfb9;
-// Accent color
-$color-brand02: #3b39da;
-$color-danger: #ff6364;
-// Light text. Lowest contrast ratio in navy on colorNavy10.
-$color-text-light: #7b8194;
-// Dark aka inverted background. For footers etc.
-$color-background-dark: #18233e;
-$color-divider-on-dark: #3d465f;
-// Dark section background. Use colorUi00 for text
-$color-ui90: #18233e;
-$color-warning-dark: #d6461e;
-// Subtle border for dark background.
-$color-ui80: #3d465f;
-// Plain/basic filled button, subtle border on dark background.
-$color-ui70: #687085;
-// Default text on White and Light backgrounds. Excellent contrast ratio!
-$color-text: #18233e;
-// Default background
+$color-background-light: #f7f7f7;
+$color-brand01: #0055ff;
+$color-white: #ffffff;
+$color-brand02: #0055ff;
+$color-danger: #c91630;
+$color-text-light: #7f7f7f;
+$color-background-dark: #333333;
+$color-orange-dark: #9d432a;
+$color-red-light: #ffb7c2;
+$color-divider-on-dark: #555555;
+$color-yellow-dark: #9e8f2e;
+$color-red: #c91630;
+// use with black
+$opacity-darker: 0.15;
+$color-ui90: #333333;
+$color-ui80: #555555;
+$color-brand-live: #d83945;
+$color-ui70: #f7f7f7;
+$color-text: #333333;
 $color-background: #ffffff;
-// Border for default button.
-$color-ui50: #8e93a3;
-// Subtle border, disabled button background
-$color-ui30: #d6d9e2;
-// Disabled buttons, regular subtle border.
-$color-ui20: #e6e9f0;
-// Default subdued divider between sections on a white background.
-$color-divider: #e6e9f0;
-// Disabled buttons, regular subtle border.
-$color-ui00: #ffffff;
-$color-warning: #fa7c29;
-// Light text. Lowest contrast ratio in navy on ui10.
-$color-text-light-on-dark: #8e93a3;
-// Not used yet, just an example
-$color-brand01-dark: #1ba190;
-$color-warning-light: #ffe7cd;
+$color-brand01-light: #46a0ff;
+$color-orange: #fa5b30;
+$color-brand-light: #46a0ff;
+$color-ui50: #999999;
+$color-ui30: #bbbbbb;
+$color-ui20: #e3e3e3;
+$color-green-dark: #007050;
+$color-ui10: #f7f7f7;
+$color-divider: #e3e3e3;
+$color-green-light: #99dfcb;
+$color-yellow: #eec200;
+$color-warning: #fa5b30;
+$color-brand-dark: #004488;
+$color-text-light-on-dark: #999999;
+$color-brand01-dark: #004488;
+// Primary text
+$color-gray90: #333333;
+$color-gray80: #555555;
+$color-yellow-light: #fce172;
+// Secondary text
+$color-gray70: #7f7f7f;
 // Convenience token.
 $spacing-mega: 48px;
 // Convenience token.

@@ -4,7 +4,6 @@ permalink: color/
 
 # Color
 
-
 ## Example
 <div class="themecard">
   <div style="grid-row: 1 / span 2">

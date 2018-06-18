@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: $font-family-body;
+  font-family: $font-family-text;
   font-size: $font-size-regular;
   line-height: $line-height-regular;
   color: $color-text;
@@ -41,7 +41,7 @@ h1 {
 }
 
 h2 {
-  font-weight: $font-weight-semibold;
+  font-weight: $font-weight-medium;
   font-size: $font-size-huge;
   line-height: $line-height-huge;
   // margin: $spacing-large 0 $spacing-small 0;
@@ -49,7 +49,7 @@ h2 {
 }
 
 h3 {
-  font-weight: $font-weight-semibold;
+  font-weight: $font-weight-medium;
   font-size: $font-size-large;
   line-height: $line-height-large;
   // margin: $spacing-large 0 $spacing-small 0;
@@ -73,12 +73,12 @@ h3 {
 }
 
 .themecard-light {
-  background: $color-background-light;
+  background: $color-gray10;
 }
 
 .themecard-dark {
-  background: $color-background-dark;
-  color: $color-ui00;
+  background: $color-gray10;
+  color: $color-gray90;
 }
 
 .guide-section {
@@ -117,15 +117,6 @@ h3 {
   grid-column: span 4;
 }
 
-.guide-warning {
-  color: $color-warning-dark;
-  background: $color-warning-light;
-  padding: $spacing-small $spacing-regular;
-  border-radius: $radius-regular;
-  display: inline-block;
-  margin-bottom: $spacing-large;
-}
-
 .guide-navigation {
   // background: $color-background;
   background: hsl(0, 0%, 97%);
@@ -146,7 +137,7 @@ h3 {
   font-size: $font-size-small;
   padding: 5px 16px;
   display: block;
-  font-weight: $font-weight-semibold;
+  font-weight: $font-weight-medium;
 }
 
 .guide-navigation a.active {
@@ -275,8 +266,8 @@ h3 {
 
 .typography-table td.typography-label {
   color: $color-text-light;
-  font-size: $font-size-desktop-small;
-  font-weight: $font-weight-semibold;
+  font-size: $font-size-small;
+  font-weight: $font-weight-medium;
   vertical-align: middle;
   width: 100px;
 }
@@ -300,7 +291,7 @@ h3 {
 }
 
 .typography-toggle-item.isSelected {
-  border-color: $color-ui90;
+  border-color: $color-gray90;
   color: $color-text;
 }
 
@@ -351,30 +342,30 @@ h3 {
 
 @media only screen and (min-width: 480px) {
   .token-table {
-    font-size: $font-size-desktop-regular;
+    font-size: $font-size-regular;
   }
 
   body {
-    font-size: $font-size-desktop-regular;
-    line-height: $line-height-desktop-regular;
+    font-size: $font-size-regular;
+    line-height: $line-height-regular;
   }
   //
   // h2, .guide-header {
-  //   font-size: $font-size-desktop-header;
-  //   line-height: $line-height-desktop-header;
+  //   font-size: $font-size-header;
+  //   line-height: $line-height-header;
   // }
   //
   // h3, .guide-section-header {
-  //   font-size: $font-size-desktop-large;
-  //   line-height: $line-height-desktop-large;
+  //   font-size: $font-size-large;
+  //   line-height: $line-height-large;
   // }
 
   .guide-navigation a {
-    font-size: $font-size-desktop-small;
+    font-size: $font-size-small;
   }
 
   .guide-navigation-category {
-    font-size: $font-size-desktop-tiny;
+    font-size: $font-size-tiny;
   }
 }
 
