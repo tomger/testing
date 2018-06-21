@@ -1,0 +1,24 @@
+{
+  "name": "Tokens",
+  "version": "0.1.0",
+  "description": "Theo Tokens in Zeplin.",
+  "scripts": {
+    "start": "zem start",
+    "build": "zem build",
+    "clean": "zem clean",
+    "exec": "zem exec"
+  },
+  "zeplin": {
+    "displayName": "Tokens",
+    "projectTypes": [
+      "web",
+      "ios",
+      "android",
+      "osx"
+    ]
+  },
+  "dependencies": {
+    "@ctrl/tinycolor": "^2.0.0",
+    "zem": "^0.1.2"
+  }
+}
